@@ -2,7 +2,9 @@ require "modules/inifile"
 
 -- love.filesystem.setIdentity("another_logic_game")
 
-if not love.filesystem.isFile("setting.ini") then
+setting_file = love.filesystem.getInfo("setting.ini", file)
+
+if setting_file == nil or setting_file.size == 0 then
 	s = {
 		window = {
 			title  = "Another Logic Game",

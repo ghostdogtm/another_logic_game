@@ -10,9 +10,9 @@ function love.load()
 	tiles_display_width  = 4
 	tiles_display_height = 4
 	tilesets = {
-    big_block   = { name = "big_block_tileset",   block_size = 32, quads = {} },
-    small_block = { name = "small_block_tileset", block_size = 7,  quads = {} }
-  }
+	big_block   = { name = "big_block_tileset",   block_size = 32, quads = {} },
+	small_block = { name = "small_block_tileset", block_size = 7,  quads = {} }
+	}
 	load_blocks(tilesets.big_block)
 	load_blocks(tilesets.small_block)
 
